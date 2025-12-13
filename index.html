@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyva 的思考笔记</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #2d3748;
+      --primary: #4299e1;
+      --header-bg: #2c5282;
+      --border: #e2e8f0;
+      --footer-text: #718096;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    header {
+      background: var(--header-bg);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      opacity: 0.9;
+      margin-top: 0.5rem;
+    }
+    main {
+      max-width: 720px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: var(--footer-text);
+    }
+    .posts {
+      list-style: none;
+      padding: 0;
+    }
+    .post-item {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .post-item:last-child {
+      border-bottom: none;
+    }
+    .post-title {
+      font-size: 1.4rem;
+      color: var(--primary);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .post-title:hover {
+      text-decoration: underline;
+    }
+    .post-date {
+      color: var(--footer-text);
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      color: var(--footer-text);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 600px) {
+      header { padding: 2rem 1rem; }
+      header h1 { font-size: 1.8rem; }
+      main { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨ Lyva 的思考笔记</h1>
+    <p>记录学习、成长与微小灵感</p>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p>欢迎来到我的数字花园 🌱</p>
+    </div>
+
+    <ul class="posts">
+      <li class="post-item">
+        <a href="first-post.html" class="post-title">为什么我选择用 GitHub Pages 写博客</a>
+        <div class="post-date">2025-12-14</div>
+      </li>
+      <li class="post-item">
+        <a href="#" class="post-title">从零开始学 HTML：我的第一周</a>
+        <div class="post-date">2025-12-10</div>
+      </li>
+      <li class="post-item">
+        <a href="#" class="post-title">如何每天坚持学习一小时</a>
+        <div class="post-date">2025-12-05</div>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>
+      <a href="about.html">关于我</a> • 
+      <a href="https://github.com/lyvariver">GitHub</a>
+    </p>
+    © 2025 • 由 lyvariver 创建<br>
+    使用纯 HTML + CSS · 部署于 GitHub Pages
+  </footer>
+
+</body>
+</html>
